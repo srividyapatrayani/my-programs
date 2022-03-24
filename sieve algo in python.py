@@ -2,7 +2,7 @@
 n=int(input())
 prime=["True" for i in range(n+1)]
 print(prime)"""
-def seive(n):
+'''def seive(n):
     prime=[True for i in range(n+1)]
     start=2
     while(start*start<=n):
@@ -14,8 +14,8 @@ def seive(n):
     prime[0]=prime[1]=False
     for start in range(n+1):
         if prime[start]:
-            print(start,end=" ")
-            
+            print(start,end=" ")'''
+#for a list of elements         
 '''n=10**6
 l=[True]*(n+1)
 def fun():
@@ -29,6 +29,30 @@ def fun():
 fun()
 print(l)
 #seive(n)'''
+
+
+
+'''for every single inout seive alfo
+def seive(q):
+    prime=[True for i in range(q+1)]
+    prime[0]=prime[1]=False
+    for i in range(2,len(prime)-1):
+        if prime[i]==True:
+            for j in range(i*i,q+1,i):
+                prime[j]==False
+    return(prime)
+q=int(input())
+prime=seive(q)
+for i in range(q):
+    n=int(input())
+    if prime[n]:
+        print(True)
+    else:
+        print(False)'''
+
+    
+    
+    
 
 
 

@@ -1,0 +1,30 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+import java.util.Scanner;
+
+
+public class simple {
+	public static void main(String[] args) {
+		String rollno,name;
+		int Marks;
+		Scanner sc=new Scanner(System.in);
+		rollno=sc.nextLine();
+		
+		Marks=sc.nextInt();
+		sc.nextLine();
+		name=sc.nextLine();
+		
+		// TODO Auto-generated method stub
+		System.out.println("rollno:"+rollno);
+		System.out.println("name:"+name);
+		System.out.println("marks:"+Marks);
+		sc.close();
+	}
+
+}
